@@ -15,6 +15,7 @@ def find_min_in_nested_arrays(src)
       inner_index += 1 
     end 
     outer_index += 1 
+    minimums
   end 
   
 end
