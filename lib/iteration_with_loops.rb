@@ -9,13 +9,14 @@ def find_min_in_nested_arrays(src)
       
       if src[outer_index][inner_index] < current_min
 
-      minimums[outer_index] = src[outer_index][inner_index]
+      current_min = src[outer_index][inner_index]
 
       end      
       inner_index += 1 
     end 
+    minimums << current_min
     outer_index += 1 
-    minimums
   end 
-  
+minimums
+ 
 end
