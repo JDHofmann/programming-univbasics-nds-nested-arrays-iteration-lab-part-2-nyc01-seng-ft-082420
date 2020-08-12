@@ -3,9 +3,9 @@ def find_min_in_nested_arrays(src)
   minimums = []
   while outer_index < src.length do 
     
+    current_min = src[outer_index][0]
     inner_index = 1  
     while inner_index < src[outer_index].length do 
-      current_min = src[outer_index][0]
       
       if src[outer_index][inner_index] < current_min
 
